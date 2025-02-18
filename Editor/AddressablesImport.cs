@@ -12,7 +12,24 @@ namespace AavegotchiSDK
     {
         static AddressablesSetup()
         {
+            EnsureLabel();
             CopyAddressablesData();
+        }
+
+        private static void EnsureLabel()
+        {
+            var settings = AddressableAssetSettingsDefaultObject.Settings;
+            if (settings == null) return;
+
+            string label = "Wearable"; // Change this to your missing label
+
+            if (!settings.GetLabels().Contains(label))
+            {
+                settings.AddLabel(label);
+                EditorUtility.SetDirty(settings);
+                AssetDatabase.SaveAssets();
+                UnityEngine.Debug.Log($"Added missing Addressables label: {label}");
+            }
         }
 
         private static void CopyAddressablesData()
