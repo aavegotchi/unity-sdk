@@ -57,7 +57,7 @@ namespace AavegotchiSDK
             }
 
             // Get the predefined Addressables group
-            string groupName = "Aavegotchi Assets";
+            string groupName = "WearableAddressableData";
             AddressableAssetGroup group = settings.groups.FirstOrDefault(g => g != null && g.Name == groupName);
 
             if (group == null)
