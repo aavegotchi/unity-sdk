@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class MaterialTextureSwapper : MonoBehaviour
 {
-    [SerializeField] private Material TargetMaterial;
+    [SerializeField] private List<SkinnedMeshRenderer> TargetRenderers;
     [SerializeField] private List<Texture2D> Textures;
     [SerializeField] private List<Texture2D> EmissionTextures; // New list for emission textures
     [SerializeField] private bool AnimateEmission = false; // New option to enable/disable emission animation
@@ -32,13 +32,16 @@ public class MaterialTextureSwapper : MonoBehaviour
 
             CurrentIndex = (CurrentIndex + 1) % Textures.Count;
 
-            // Set the main texture
-            TargetMaterial.mainTexture = Textures[CurrentIndex];
-
-            // Set the emission texture if the option is enabled
-            if (AnimateEmission)
+            foreach (var targetRenderer in TargetRenderers)
             {
-                TargetMaterial.SetTexture("_EmissionMap", EmissionTextures[CurrentIndex]);
+                // Set the main texture
+                targetRenderer.material.mainTexture = Textures[CurrentIndex];
+
+                // Set the emission texture if the option is enabled
+                if (AnimateEmission)
+                {
+                    targetRenderer.material.SetTexture("_EmissionMap", EmissionTextures[CurrentIndex]);
+                }
             }
         }
     }

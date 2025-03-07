@@ -48,8 +48,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WearableID: 53
+  SkinID: 0
   MaterialName: 
   CharacterAnimator: {fileID: 0}
+  AdditionalAnimators: []
   SkinnedMeshRenderers:
   - {fileID: 3327763279526578316}
   - {fileID: 3595990481417396663}
@@ -63,8 +65,12 @@ MonoBehaviour:
   RightHandTransform: {fileID: 0}
   DisableCollateral: 0
   DisableEyes: 1
+  DisableEyeWearables: 0
   IsSkinnedWeapon: 0
+  DisableCheeks: 0
   DisableShoulder: 0
+  GotchiMat: {fileID: 0}
+  Attachments: []
 --- !u!114 &4515237744161400021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,13 +83,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e613951a8f4b1c48a00ba73fe553cd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TargetMaterial: {fileID: 2100000, guid: 4ecc91787adb32549bc57550cad9c460, type: 2}
+  TargetRenderers:
+  - {fileID: 3327763279526578316}
+  - {fileID: 3595990481417396663}
   Textures:
   - {fileID: 2800000, guid: 97a8fab545b06b144917eede52952fd6, type: 3}
   - {fileID: 2800000, guid: 109df5364b20a4a4495ec1d8b61efbbf, type: 3}
   - {fileID: 2800000, guid: 3223243b00faf4142874b1557eca18dc, type: 3}
   - {fileID: 2800000, guid: f7dae6083b01f174685584c7ba6e3204, type: 3}
   - {fileID: 2800000, guid: 58e86dfe811900543a2d32f14e8f3a05, type: 3}
+  EmissionTextures: []
+  AnimateEmission: 0
   TimeToSwitch: 0.1
 --- !u!1 &4446473783893467835
 GameObject:
@@ -134,6 +144,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -227,6 +240,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
