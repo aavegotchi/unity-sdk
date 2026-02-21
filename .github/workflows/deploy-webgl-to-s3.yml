@@ -1,0 +1,137 @@
+name: Deploy Unity WebGL To S3
+
+on:
+  workflow_dispatch:
+    inputs:
+      deploy_assets:
+        description: "Upload WebGL build files to S3"
+        required: true
+        default: false
+        type: boolean
+      build_path:
+        description: "Path containing Build/ and StreamingAssets/ (repo-relative)"
+        required: true
+        default: "."
+        type: string
+      invalidate_cdn:
+        description: "Invalidate CloudFront after deploy"
+        required: true
+        default: true
+        type: boolean
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    env:
+      AWS_REGION: ${{ secrets.AWS_REGION }}
+      S3_BUCKET: ${{ secrets.S3_BUCKET }}
+      CLOUDFRONT_DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Validate AWS and target bucket
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          required_vars=(AWS_REGION S3_BUCKET)
+          for var_name in "${required_vars[@]}"; do
+            if [[ -z "${!var_name:-}" ]]; then
+              echo "Missing required secret mapped to env var: ${var_name}"
+              exit 1
+            fi
+          done
+
+          aws sts get-caller-identity
+          aws s3api head-bucket --bucket "${S3_BUCKET}"
+
+      - name: Validation-only mode
+        if: ${{ github.event.inputs.deploy_assets != 'true' }}
+        run: echo "Validation completed. Set deploy_assets=true to upload files."
+
+      - name: Validate build path
+        if: ${{ github.event.inputs.deploy_assets == 'true' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          build_path="${{ github.event.inputs.build_path }}"
+
+          if [[ ! -d "${build_path}" ]]; then
+            echo "Build path does not exist: ${build_path}"
+            exit 1
+          fi
+
+          if [[ ! -d "${build_path}/Build" ]]; then
+            echo "Missing Build directory in ${build_path}"
+            exit 1
+          fi
+
+          if [[ ! -d "${build_path}/StreamingAssets" ]]; then
+            echo "Missing StreamingAssets directory in ${build_path}"
+            exit 1
+          fi
+
+      - name: Upload build files to S3
+        if: ${{ github.event.inputs.deploy_assets == 'true' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          build_path="${{ github.event.inputs.build_path }}"
+          aws s3 sync "${build_path}/" "s3://${S3_BUCKET}/" --delete
+
+      - name: Fix Content-Encoding for Unity gzip assets
+        if: ${{ github.event.inputs.deploy_assets == 'true' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          build_path="${{ github.event.inputs.build_path }}"
+
+          aws s3 cp "${build_path}/Build/" "s3://${S3_BUCKET}/Build/" \
+            --recursive --exclude "*" --include "*.js.gz" \
+            --content-type "application/javascript" \
+            --content-encoding "gzip" \
+            --metadata-directive REPLACE
+
+          aws s3 cp "${build_path}/Build/" "s3://${S3_BUCKET}/Build/" \
+            --recursive --exclude "*" --include "*.wasm.gz" \
+            --content-type "application/wasm" \
+            --content-encoding "gzip" \
+            --metadata-directive REPLACE
+
+          aws s3 cp "${build_path}/Build/" "s3://${S3_BUCKET}/Build/" \
+            --recursive --exclude "*" --include "*.data.gz" \
+            --content-type "application/octet-stream" \
+            --content-encoding "gzip" \
+            --metadata-directive REPLACE
+
+          aws s3 cp "${build_path}/Build/" "s3://${S3_BUCKET}/Build/" \
+            --recursive --exclude "*" --include "*.symbols.json.gz" \
+            --content-type "application/json" \
+            --content-encoding "gzip" \
+            --metadata-directive REPLACE
+
+      - name: Invalidate CloudFront
+        if: ${{ github.event.inputs.deploy_assets == 'true' && github.event.inputs.invalidate_cdn == 'true' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ -z "${CLOUDFRONT_DISTRIBUTION_ID:-}" ]]; then
+            echo "Missing CLOUDFRONT_DISTRIBUTION_ID secret"
+            exit 1
+          fi
+
+          aws cloudfront create-invalidation \
+            --distribution-id "${CLOUDFRONT_DISTRIBUTION_ID}" \
+            --paths "/*"
