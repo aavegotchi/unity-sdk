@@ -77,6 +77,8 @@ public class DressingRoomManager : MonoBehaviour
     private Color LastSetColor = Color.black;
 
     IList<IResourceLocation> WearableAssetList = null;
+    private readonly HashSet<int> WearablesWithIconIdFooters = new HashSet<int> { 418, 419, 420, 421 };
+    private readonly Dictionary<int, Sprite> CroppedWearableIcons = new Dictionary<int, Sprite>();
 
     //--------------------------------------------------------------------------------------------------
     public void Start()
@@ -450,10 +452,18 @@ public class DressingRoomManager : MonoBehaviour
 
         foreach (var wearable in wearableData)
         {
+            // 421 is not yet part of the production wearable set.
+            if (wearable.WearableID == 421)
+            {
+                continue;
+            }
+
             var item = Instantiate(DressingRoomItemPrefab, section.transform);
             item.ID = wearable.WearableID;
             item.SelectedText = $"{wearable.WearableID} - {wearable.WearableName}";
-            item.Icon.sprite = wearable.WearableIcon;
+            var displayIcon = GetDisplayWearableIcon(wearable);
+            item.Icon.sprite = displayIcon;
+            item.Icon.color = displayIcon != null ? Color.white : Color.clear;
             bool wearableReady = false;
             string addressablesKey = $"Wearable_Mesh_{wearable.WearableID}";
             foreach (var resourceLocation in WearableAssetList)
@@ -467,6 +477,49 @@ public class DressingRoomManager : MonoBehaviour
 
             section.AddDressingRoomSectionItem(item, wearableReady);
         }
+    }
+
+    //--------------------------------------------------------------------------------------------------
+    private Sprite GetDisplayWearableIcon(AavegotchiWearable_DatabaseEntry wearable)
+    {
+        if (wearable.WearableIcon == null)
+        {
+            return null;
+        }
+
+        if (!WearablesWithIconIdFooters.Contains(wearable.WearableID))
+        {
+            return wearable.WearableIcon;
+        }
+
+        if (CroppedWearableIcons.TryGetValue(wearable.WearableID, out var croppedIcon))
+        {
+            return croppedIcon;
+        }
+
+        var sourceIcon = wearable.WearableIcon;
+        var sourceRect = sourceIcon.rect;
+        if (sourceRect.height <= sourceRect.width)
+        {
+            CroppedWearableIcons[wearable.WearableID] = sourceIcon;
+            return sourceIcon;
+        }
+
+        // Some imported Base icons include an ID footer in the bottom strip.
+        // Keep the top square area for display.
+        var squareHeight = sourceRect.width;
+        var croppedRect = new Rect(sourceRect.x, sourceRect.y + (sourceRect.height - squareHeight), sourceRect.width, squareHeight);
+        croppedIcon = Sprite.Create(sourceIcon.texture,
+                                    croppedRect,
+                                    new Vector2(0.5f, 0.5f),
+                                    sourceIcon.pixelsPerUnit,
+                                    0,
+                                    SpriteMeshType.FullRect,
+                                    sourceIcon.border);
+        croppedIcon.name = $"{sourceIcon.name}_cropped";
+        CroppedWearableIcons[wearable.WearableID] = croppedIcon;
+
+        return croppedIcon;
     }
 
     //--------------------------------------------------------------------------------------------------
