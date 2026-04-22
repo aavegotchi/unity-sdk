@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/TPSBR/Resources/UI/NotificationHUD.uss?fileID=7433441132597879392&amp;guid=cdc92e14e58c9473cb001df0a0ef86e7&amp;type=3#NotificationHUD" />
+    <ui:VisualElement name="screen" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+        <ui:VisualElement name="content" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); margin-left: 25px; margin-right: 25px; margin-top: 50px; margin-bottom: 25px;">
+            <ui:Label tabindex="-1" text="NICE SHOT!" display-tooltip-when-elided="true" name="title" style="font-size: 48px; -unity-font: url(&apos;project://database/Assets/TPSBR/Fonts/PaybAck.ttf); color: rgb(255, 129, 251); width: 735px; -unity-text-outline-color: rgb(0, 0, 0); -unity-text-outline-width: 2px; -unity-font-definition: initial; -unity-font-style: bold; -unity-text-align: middle-center; text-overflow: ellipsis; height: 64px; flex-direction: row; align-self: center; justify-content: space-between; align-items: auto; translate: 0 65px; padding-top: 0; padding-bottom: 0; padding-right: 0; padding-left: 0;" />
+            <ui:VisualElement name="message-container" style="flex-grow: initial; background-color: rgba(0, 0, 0, 0); -unity-text-align: upper-center; justify-content: center; translate: 0 50px; flex-direction: row; align-items: flex-start; align-self: center; opacity: 1; width: 1141px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

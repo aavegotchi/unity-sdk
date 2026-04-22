@@ -1,0 +1,394 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85bf43f1a00b543d29b85bcb996484ff, type: 3}
+  m_Name: NonAddressableAssetTable
+  m_EditorClassIdentifier: 
+  Prefabs:
+    Assets:
+    - Path: Assets/AavegotchiSDK/Plugins/Popup/Prefabs/BadgeNotification.prefab
+      Asset: {fileID: 1010309153189664, guid: 2a860ea1b28d6437fa88a1f625629d28, type: 3}
+    - Path: Assets/AavegotchiSDK/Plugins/Popup/Prefabs/NotificationSystem.prefab
+      Asset: {fileID: 3915576788289258140, guid: c2db759e112af4fb492b0bc677898e23, type: 3}
+    - Path: Assets/AavegotchiSDK/Plugins/Popup/Prefabs/PopupNotification.prefab
+      Asset: {fileID: 1010309153189664, guid: 68a55a9a5437c4243b0aba56d39bce52, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Decorations/Gnomes/19_Common_Rofl_Gnome.prefab
+      Asset: {fileID: 5355088813004750689, guid: 8a2d16a259aed433ba14ac8bc1cdd018, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Decorations/Gnomes/20_Uncommon_Rofl_Gnome.prefab
+      Asset: {fileID: 6517950987653779348, guid: 9f60c6ec4059f4548a86ba546540b437, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Decorations/Gnomes/21_Rare_Rofl_Gnome.prefab
+      Asset: {fileID: 4226907606192320869, guid: 7b3af3e9a10f54f4daaf873b29126e35, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Decorations/Gnomes/22_Legendary_Rofl_Gnome.prefab
+      Asset: {fileID: 7793078525951904448, guid: 92a3cd1bdfbe8486d9a7aff8532bd63b, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Decorations/Gnomes/23_Mythical_Rofl_Gnome.prefab
+      Asset: {fileID: 2525795605316177580, guid: e8e584a8ebecb4a499226576403504e1, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Decorations/Gnomes/24_Godlike_Rofl_Gnome.prefab
+      Asset: {fileID: 2192638492582806778, guid: 35fb0e426a54940ffb5650237ce834f9, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Aaltars/10_Alchemical_Aaltar_Level_1.prefab
+      Asset: {fileID: 6418186624251162738, guid: 5838f0fb8d6d14240b4eda03ae797681, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Aaltars/11_Alchemical_Aaltar_Level_2.prefab
+      Asset: {fileID: 4628987820767803951, guid: 016f967728cd9490ba7d3edc54093f63, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Aaltars/12_Alchemical_Aaltar_Level_3.prefab
+      Asset: {fileID: 1402447968986698724, guid: 87c759312fd6e4f69b5a9a45979434eb, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Aaltars/13_Alchemical_Aaltar_Level_4.prefab
+      Asset: {fileID: 7701680057457218919, guid: 1420fff941d884235b6bc0fca2f4ca76, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Aaltars/14_Alchemical_Aaltar_Level_5.prefab
+      Asset: {fileID: 6357813670342369612, guid: accf065a4272d42a6b3ec26ce2cd85b0, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Aaltars/15_Alchemical_Aaltar_Level_6.prefab
+      Asset: {fileID: 7511610571075340067, guid: 98e7dcbdb882c460e84d14dfdabdb6b3, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Aaltars/16_Alchemical_Aaltar_Level_7.prefab
+      Asset: {fileID: 7213473235701120286, guid: 9cc6d4c7395bc40cf904a07001f99409, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Aaltars/17_Alchemical_Aaltar_Level_8.prefab
+      Asset: {fileID: 7011442024223975482, guid: 91a161b12dc044d6e95c26607189d60a, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Aaltars/18_Alchemical_Aaltar_Level_9.prefab
+      Asset: {fileID: 2982142947183700101, guid: 1a88c126c3177441ead81734de32c77a, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Aaltars/1_LE_Golden_Aaltar.prefab
+      Asset: {fileID: 73453223801421219, guid: e50bda00b23b243ff8ae452ff0e32aff, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Aaltars/2_LE_Golden_Aaltar.prefab
+      Asset: {fileID: 618765796592942008, guid: a9aad2be11fcd4e20b4af771a75b8fcf, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Aaltars/3_LE_Golden_Aaltar.prefab
+      Asset: {fileID: 7573011590472618700, guid: a597d3aa0653c40bc98bc1d710b4dac3, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Aaltars/4_LE_Golden_Aaltar.prefab
+      Asset: {fileID: 7057761766766232635, guid: 9036af1c330f44b79a5990b0c2696cd7, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Aaltars/5_LE_Golden_Aaltar.prefab
+      Asset: {fileID: 1223679674710749105, guid: ca1f458a0e2e746379592652e732621d, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Aaltars/6_LE_Golden_Aaltar.prefab
+      Asset: {fileID: 7825634962906131211, guid: 9de9156289f5b4b22b8bbf8454a9df15, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Aaltars/7_LE_Golden_Aaltar.prefab
+      Asset: {fileID: 8467858635849531788, guid: 5decf180b264942ed85e7d836351c1b8, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Aaltars/8_LE_Golden_Aaltar.prefab
+      Asset: {fileID: 8359062174102943405, guid: 1594851901df44e6c80a45e3801cdb41, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Aaltars/9_LE_Golden_Aaltar.prefab
+      Asset: {fileID: 5292735321293494268, guid: d32da1aca1f784c6a8757c08e8104ac2, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Maakers/128_Maaker_Level_1.prefab
+      Asset: {fileID: 3699050200388920688, guid: 5f19fbb1b71444da6bbb8ae7a8e99fab, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Maakers/129_Maaker_Level_2.prefab
+      Asset: {fileID: 5766948923124435501, guid: 1181e6e044ece486d989e50bb52c27dd, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Maakers/130_Maaker_Level_3.prefab
+      Asset: {fileID: 1544257044625578367, guid: db3ab6f73fb494028bdccafe6126551e, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Maakers/131_Maaker_Level_4.prefab
+      Asset: {fileID: 8861540095425128885, guid: 454651b91127e4da99551132d386a142, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Maakers/132_Maaker_Level_5.prefab
+      Asset: {fileID: 3670981447682520112, guid: 00a97335e901a44409c589c4de774763, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Maakers/133_Maaker_Level_6.prefab
+      Asset: {fileID: 4244878983703995666, guid: 14c16a21ccf16495a9494b083a58816b, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Maakers/134_Maaker_Level_7.prefab
+      Asset: {fileID: 4007569134744912528, guid: e05e1eca2d07f4e2f83642a21f3c148d, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Maakers/135_Maaker_Level_8.prefab
+      Asset: {fileID: 509384598891231668, guid: dbffc8a0f3b894693ab8c3a941237363, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Maakers/136_Maaker_Level_9.prefab
+      Asset: {fileID: 6621156062813403728, guid: 7b2fc49e4f76b4e8da50c153a13855f4, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/NFT_DIsplay/137_NFT_Display_-_4x4.prefab
+      Asset: {fileID: 834494081160484937, guid: bb55645a9bd6646399f66de7c2476f0e, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/NFT_DIsplay/138_NFT_Display_-_4x6.prefab
+      Asset: {fileID: 8087669082353159579, guid: 4502b3b26aeed4fa0bfb3bff03e34dd8, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/NFT_DIsplay/139_NFT_Display_-_6x4.prefab
+      Asset: {fileID: 530375297380784519, guid: 901c138526900ea4c911b37616edfc61, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/NFT_DIsplay/140_NFT_Display_-_8x8.prefab
+      Asset: {fileID: 7156153878720637900, guid: 261701683e1ca4e16823d761db26122d, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/NFT_DIsplay/141_LE_Golden_NFT_Display_-_4x4.prefab
+      Asset: {fileID: 1013321271139772393, guid: 905f2c36914a24a06963c443a91852d2, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/NFT_DIsplay/142_LE_Golden_NFT_Display_-_4x6.prefab
+      Asset: {fileID: 1623183165227299758, guid: f46cb9f26507b43ab801f12d7e2801cf, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/NFT_DIsplay/143_LE_Golden_NFT_Display_-_6x4.prefab
+      Asset: {fileID: 7758909724406274135, guid: 6a717f3e0a8cf449d896a0e8bb1f411d, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/NFT_DIsplay/144_LE_Golden_NFT_Display_-_8x8.prefab
+      Asset: {fileID: 8241999246240092809, guid: b2e583e4e9ce94d8aaf43c3d4c855970, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/100_FUD_Reservoir_Level_9.prefab
+      Asset: {fileID: 603726853642414465, guid: ccc4cc77e27c24f48a94767bdf45ced2, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/101_FOMO_Reservoir_Level_1.prefab
+      Asset: {fileID: 4995994536448363441, guid: 022678de5aea14b1698cc816d8f1851e, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/102_FOMO_Reservoir_Level_2.prefab
+      Asset: {fileID: 5665853751140428525, guid: 2da026baa8d8a4438ae84fcc9acdf2cc, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/103_FOMO_Reservoir_Level_3.prefab
+      Asset: {fileID: 7715341104226450846, guid: 23d7e8e1afa624fa5ad1fd92540c2d88, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/104_FOMO_Reservoir_Level_4.prefab
+      Asset: {fileID: 1827635408817589331, guid: c2d3d980af40747809b556f8a5d94ed0, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/105_FOMO_Reservoir_Level_5.prefab
+      Asset: {fileID: 4925267025048307609, guid: 6f7eee8a903df454a98d47464509c38b, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/106_FOMO_Reservoir_Level_6.prefab
+      Asset: {fileID: 1732672203401276915, guid: 31098850cb51142cf95b712400ccab42, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/107_FOMO_Reservoir_Level_7.prefab
+      Asset: {fileID: 2860322119345166961, guid: 0ad7416ef5c174253831d4c59d181293, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/108_FOMO_Reservoir_Level_8.prefab
+      Asset: {fileID: 4149427877628966428, guid: 842d62ced752342dd8fc9d10c8383579, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/109_FOMO_Reservoir_Level_9.prefab
+      Asset: {fileID: 603726853642414465, guid: f460334a46c5c489b88052b12d7146a5, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/110_ALPHA_Reservoir_Level_1.prefab
+      Asset: {fileID: 2860322119345166961, guid: f5c7998ef04064f9f8fb0bff84bfa529, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/111_ALPHA_Reservoir_Level_2.prefab
+      Asset: {fileID: 4149427877628966428, guid: f0c72d46fcbe74a15b27af7e1a079c2e, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/112_ALPHA_Reservoir_Level_3.prefab
+      Asset: {fileID: 603726853642414465, guid: a1a1ebd8465ca442ea4c1f582a37999f, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/113_ALPHA_Reservoir_Level_4.prefab
+      Asset: {fileID: 1732672203401276915, guid: f70d4d4bdc73a4c088838b080aa342b0, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/114_ALPHA_Reservoir_Level_5.prefab
+      Asset: {fileID: 4925267025048307609, guid: e025130a1236843cb982758325dc33f0, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/115_ALPHA_Reservoir_Level_6.prefab
+      Asset: {fileID: 1827635408817589331, guid: 262cd1283c34541c1a9087a96cf9423c, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/116_ALPHA_Reservoir_Level_7.prefab
+      Asset: {fileID: 7715341104226450846, guid: 64277ada3f65d468a998c1b4c073e0bb, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/117_ALPHA_Reservoir_Level_8.prefab
+      Asset: {fileID: 5665853751140428525, guid: 6e01de07bd25647a893de0640b08e615, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/118_ALPHA_Reservoir_Level_9.prefab
+      Asset: {fileID: 4995994536448363441, guid: ee7f9e120b94041e68ad760f238ea86d, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/119_KEK_Reservoir_Level_1.prefab
+      Asset: {fileID: 4995994536448363441, guid: a6ef74c80142443da8b6c5fc5ede286c, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/120_KEK_Reservoir_Level_2.prefab
+      Asset: {fileID: 5665853751140428525, guid: 7b778f927da064e2291700b9fe3dd51d, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/121_KEK_Reservoir_Level_3.prefab
+      Asset: {fileID: 7715341104226450846, guid: c2aadff1d1b3c49018ec7bf01b0dd09c, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/122_KEK_Reservoir_Level_4.prefab
+      Asset: {fileID: 1827635408817589331, guid: 7df848773112d4198a6569c5147c3e2a, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/123_KEK_Reservoir_Level_5.prefab
+      Asset: {fileID: 4925267025048307609, guid: 3a1db4963ed264e0b93be5ef86722684, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/124_KEK_Reservoir_Level_6.prefab
+      Asset: {fileID: 1732672203401276915, guid: 233b404dea1ff48d397e732cea6daf5a, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/125_KEK_Reservoir_Level_7.prefab
+      Asset: {fileID: 2860322119345166961, guid: d197e7f6931144905b965955b3591a50, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/126_KEK_Reservoir_Level_8.prefab
+      Asset: {fileID: 4149427877628966428, guid: caf66e73a24e94364b8256ff1ad033c9, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/127_KEK_Reservoir_Level_9.prefab
+      Asset: {fileID: 603726853642414465, guid: 8feb9f0faf83d43cabb4cd7ec45511f4, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/92_FUD_Reservoir_Level_1.prefab
+      Asset: {fileID: 4995994536448363441, guid: ebb8dec4a90004d1cb441bb30d81882c, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/93_FUD_Reservoir_Level_2.prefab
+      Asset: {fileID: 5665853751140428525, guid: 4e8c306d5da284eeb84e8491bf24749d, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/94_FUD_Reservoir_Level_3.prefab
+      Asset: {fileID: 7715341104226450846, guid: 41609c796337b45e4ac0b6538000c231, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/95_FUD_Reservoir_Level_4.prefab
+      Asset: {fileID: 1827635408817589331, guid: 5cfc2c7a690844a629346ed9f0a9b533, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/96_FUD_Reservoir_Level_5.prefab
+      Asset: {fileID: 4925267025048307609, guid: c3e31329473b746329f1abbc26abec99, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/97_FUD_Reservoir_Level_6.prefab
+      Asset: {fileID: 1732672203401276915, guid: 2c51b7afb0ad94a839953aef6054d761, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/98_FUD_Reservoir_Level_7.prefab
+      Asset: {fileID: 2860322119345166961, guid: c5de6400726854e90a05831e44f6094a, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/Reservoirs/99_FUD_Reservoir_Level_8.prefab
+      Asset: {fileID: 4149427877628966428, guid: 32dbdea7b0ba54e5ea8fdc645ebd1b47, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/56_FUD_Harvester_Level_1.prefab
+      Asset: {fileID: 3998525127837516443, guid: 5dcff1b2339174666ace99226631930d, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/57_FUD_Harvester_Level_2.prefab
+      Asset: {fileID: 648464557311359344, guid: 2fc35afa623ec4b4bad056cfe7bf3af5, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/58_FUD_Harvester_Level_3.prefab
+      Asset: {fileID: 893944209796514178, guid: 86463947f3a96470aabe3d5dbfc64fc7, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/59_FUD_Harvester_Level_4.prefab
+      Asset: {fileID: 7161369947103805585, guid: 2f9b7e1e2a28c4405bf1f92e7f0ef003, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/60_FUD_Harvester_Level_5.prefab
+      Asset: {fileID: 9091807115793377671, guid: befea99fb4b704aa1bd6c62c60b0b090, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/61_FUD_Harvester_Level_6.prefab
+      Asset: {fileID: 1355767854036422721, guid: 4ac139196f6b4414d93fb10b71e3e83b, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/62_FUD_Harvester_Level_7.prefab
+      Asset: {fileID: 7935238405652918618, guid: 3c72c7f9ec69c415985ea22728e307d4, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/63_FUD_Harvester_Level_8.prefab
+      Asset: {fileID: 1490890448118704576, guid: f94ac517c3cbf48518b269b24c1abd5a, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/64_FUD_Harvester_Level_9.prefab
+      Asset: {fileID: 1181270435592503355, guid: 3c4f2845b58074dbf9bd2f3f5c9a45ba, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/65_FOMO_Harvester_Level_1.prefab
+      Asset: {fileID: 7396877438203309634, guid: 72ad19d36e9254698a18caa8062750a3, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/66_FOMO_Harvester_Level_2.prefab
+      Asset: {fileID: 4347456410563243545, guid: 9fc4b0332fa444bada8f55ce5c0e03a8, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/67_FOMO_Harvester_Level_3.prefab
+      Asset: {fileID: 4936416908695564501, guid: 9e1078f94f2f84d2393d0d5580c07139, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/68_FOMO_Harvester_Level_4.prefab
+      Asset: {fileID: 3654575436438904396, guid: 2a0e83e57f4084b2ca15771eff9a7294, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/69_FOMO_Harvester_Level_5.prefab
+      Asset: {fileID: 6594789454083659940, guid: 6c8fb53e6451f4d609f7ddfbb28def4b, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/70_FOMO_Harvester_Level_6.prefab
+      Asset: {fileID: 8595924236355630496, guid: 67f280ab88f8d499490fde112ade61ad, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/71_FOMO_Harvester_Level_7.prefab
+      Asset: {fileID: 3396786937711439670, guid: a148a1572cb9049e697304c8e5798eb5, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/72_FOMO_Harvester_Level_8.prefab
+      Asset: {fileID: 3938204034176175778, guid: 9f4c9c92e5ef04eab80bd53a301d2553, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/73_FOMO_Harvester_Level_9.prefab
+      Asset: {fileID: 6152874284223727335, guid: a103da2f8b0614ca88244b960ae943f2, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/74_ALPHA_Harvester_Level_1.prefab
+      Asset: {fileID: 5596074788132691643, guid: 44bdac880a23442cb94cbdd29194c10b, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/75_ALPHA_Harvester_Level_2.prefab
+      Asset: {fileID: 7430225863929522110, guid: 1448de7210d3d4b58ab2c1c46564bdad, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/76_ALPHA_Harvester_Level_3.prefab
+      Asset: {fileID: 6197086481107841795, guid: 7818f4aa987f647f6bcaf3442b024b67, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/77_ALPHA_Harvester_Level_4.prefab
+      Asset: {fileID: 2969099334446457853, guid: 16f40b05249364d228936bbd58454c4e, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/78_ALPHA_Harvester_Level_5.prefab
+      Asset: {fileID: 4820966888140400668, guid: ca005cef30c61477db0e733cd592bf85, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/79_ALPHA_Harvester_Level_6.prefab
+      Asset: {fileID: 5121485444739724754, guid: 899789b2d13a642fab313bfc29ff38f3, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/80_ALPHA_Harvester_Level_7.prefab
+      Asset: {fileID: 6633606590494974076, guid: 92268d3e0edfc43df89b6c74be700757, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/81_ALPHA_Harvester_Level_8.prefab
+      Asset: {fileID: 8383365611750594304, guid: 8abefb92ff1b94116af41f373f1fe27c, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/82_ALPHA_Harvester_Level_9.prefab
+      Asset: {fileID: 1946550533101203975, guid: 5d01fb5a5676d433d8b5f36853e3b797, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/83_KEK_Harvester_Level_1.prefab
+      Asset: {fileID: 5275776031685464773, guid: 7bd3a0483e5e0468b801035acc5c7e94, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/84_KEK_Harvester_Level_2.prefab
+      Asset: {fileID: 106533499071065490, guid: 79f98dcdc16c849ae8e3d82beb9eb48c, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/85_KEK_Harvester_Level_3.prefab
+      Asset: {fileID: 4617272370437360844, guid: df1069bf57fa1424db68188ad63e5607, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/86_KEK_Harvester_Level_4.prefab
+      Asset: {fileID: 8311187004629888996, guid: 3c883d6b0982a4e77922550b6f27fc46, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/87_KEK_Harvester_Level_5.prefab
+      Asset: {fileID: 7344287083582739599, guid: 05221c36f709d49b2a3f367fb14a67de, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/88_KEK_Harvester_Level_6.prefab
+      Asset: {fileID: 1694708991515408366, guid: dc1b1dbe0506140908fcc135bc7f7edc, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/89_KEK_Harvester_Level_7.prefab
+      Asset: {fileID: 6264262096258718514, guid: d3182579909984bda9f69461b41b2f55, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/90_KEK_Harvester_Level_8.prefab
+      Asset: {fileID: 7096004358961504161, guid: c9110ab6b76e346b2b993cd381837822, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/Installations/haarvesters/91_KEK_Harvester_Level_9.prefab
+      Asset: {fileID: 5402934613719453737, guid: 20974260407a046bb866694db95de48b, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/MapObjects/AlchemicaPool_ALPHA.prefab
+      Asset: {fileID: 6145406594527644708, guid: 3b068d616e0a843bfb79670bf9ea0415, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/MapObjects/AlchemicaPool_FOMO.prefab
+      Asset: {fileID: 5522969861375995371, guid: a7b4d03cf21d848fda97e98c4e885f86, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/MapObjects/AlchemicaPool_FUD.prefab
+      Asset: {fileID: 5112051935910505794, guid: eba653ba1cca3444c86c5a95a2d64b52, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/MapObjects/AlchemicaPool_KEK.prefab
+      Asset: {fileID: 7419052989724218655, guid: bd62a483fce384026849fb9301226f4d, type: 3}
+    - Path: Assets/TPSBR/Gotchiverse/Prefabs/MapObjects/Roads.prefab
+      Asset: {fileID: 6150179504326592549, guid: 6db136615823b4a42b1629b3ead76e54, type: 3}
+    - Path: Assets/TPSBR/Prefabs/Agents/AgentBase.prefab
+      Asset: {fileID: 7625200539080901463, guid: c17b47fcacdfc8d4b80809005a2b2555, type: 3}
+    - Path: Assets/TPSBR/Prefabs/Agents/AgentCombat Variant.prefab
+      Asset: {fileID: 4222646870036346284, guid: 1313a71fdd5a3f242a2169ea955d5584, type: 3}
+    - Path: Assets/TPSBR/Prefabs/Game/NetworkRunner.prefab
+      Asset: {fileID: 4753164738901776644, guid: 36ba3480ded34f441a0d952459870465, type: 3}
+    - Path: Assets/TPSBR/Prefabs/VFX/Environment/EnvironmentHitImpactGrenade.prefab
+      Asset: {fileID: 1651363388222792, guid: 4c385ea625838b1489592953690f867f, type: 3}
+    - Path: Assets/TPSBR/Prefabs/VFX/Environment/EnvironmentHitImpactMeele.prefab
+      Asset: {fileID: 3085737180633283584, guid: af0afa42e8040c64aa7d87dd5a5428e2, type: 3}
+    - Path: Assets/TPSBR/Prefabs/VFX/Environment/EnvironmentHitImpactRanged.prefab
+      Asset: {fileID: 3085737180633283584, guid: 69620b64ce3518c4893c3cab20cd4731, type: 3}
+    - Path: Assets/TPSBR/Prefabs/VFX/Gotchi/ImpactGotchi_Grenade.prefab
+      Asset: {fileID: 1795992203533318, guid: 14453dcf2b61a92479b896e7a4b8cfae, type: 3}
+    - Path: Assets/TPSBR/Prefabs/VFX/Gotchi/ImpactGotchi_Meele.prefab
+      Asset: {fileID: 1795992203533318, guid: 825a6b950d7db224f9004c5d99f33bc7, type: 3}
+    - Path: Assets/TPSBR/Prefabs/VFX/Gotchi/ImpactGotchi_Ranged.prefab
+      Asset: {fileID: 1795992203533318, guid: 751a5afd9ca23b646ab387fc5801bfaf, type: 3}
+    - Path: Assets/TPSBR/Prefabs/VFX/Lickquidator/Lick_Grenade_Hit.prefab
+      Asset: {fileID: 4591392690140796422, guid: a3b8b2b663ecc477ca32a23fdae778ae, type: 3}
+    - Path: Assets/TPSBR/Prefabs/VFX/Lickquidator/Lick_Melee_Hit.prefab
+      Asset: {fileID: 4079251959652221617, guid: fbfb0c29130db45ea8223266140a3dab, type: 3}
+    - Path: Assets/TPSBR/Prefabs/VFX/Lickquidator/Lick_Ranged_Hit.prefab
+      Asset: {fileID: 7037477602932804993, guid: a89035cbb48f94f7fae0abe68c643754, type: 3}
+  Models:
+    Assets: []
+  Sprites:
+    Assets:
+    - Path: Assets/AavegotchiSDK/Profile/Sprites/Common/SelectGotchi/select-gotchi-bg.png
+      Asset: {fileID: 21300000, guid: 1b0d242122bdc439c84fdbdb22e451a0, type: 3}
+    - Path: Assets/TPSBR/Resources/MapImages/AarenaPreview.png
+      Asset: {fileID: 21300000, guid: d494b58b2630e4a3cbee75e487a3d7b9, type: 3}
+    - Path: Assets/TPSBR/Resources/MapImages/GamePreview.png
+      Asset: {fileID: 21300000, guid: f3a98a44addd7bd4c920c80dcfd4eed3, type: 3}
+    - Path: Assets/TPSBR/Resources/MapImages/GenArea7Preview.png
+      Asset: {fileID: 21300000, guid: b229bcec050f1f043a9c5a841d540f5b, type: 3}
+    - Path: Assets/TPSBR/Resources/MapImages/Map_1.png
+      Asset: {fileID: 21300000, guid: c667b9f3b2cee45c683410702c28face, type: 3}
+    - Path: Assets/TPSBR/Resources/MapImages/duel.png
+      Asset: {fileID: 21300000, guid: 8b5d21b676ca24f58bd371eb4397c55a, type: 3}
+    - Path: Assets/TPSBR/Resources/MapImages/lounge.png
+      Asset: {fileID: 21300000, guid: 9cebf4713345b42ed900b207c42f017d, type: 3}
+    - Path: Assets/TPSBR/UI/GVUI/AvailableGames/Tabs Icons/crown-bronze.png
+      Asset: {fileID: 21300000, guid: 7473494f5d7db4e219b14c3fc7dfcd84, type: 3}
+    - Path: Assets/TPSBR/UI/GVUI/AvailableGames/Tabs Icons/crown-diamond.png
+      Asset: {fileID: 21300000, guid: c5a7d5a7994464867a8f36d07ff75d1b, type: 3}
+    - Path: Assets/TPSBR/UI/GVUI/AvailableGames/Tabs Icons/crown-emerald.png
+      Asset: {fileID: 21300000, guid: 0faee16a1ae234f4484897714db4e86d, type: 3}
+    - Path: Assets/TPSBR/UI/GVUI/AvailableGames/Tabs Icons/crown-gold.png
+      Asset: {fileID: 21300000, guid: 8460850cb5b534baba7f87c3f56c4e4d, type: 3}
+    - Path: Assets/TPSBR/UI/GVUI/AvailableGames/Tabs Icons/crown-obsidian.png
+      Asset: {fileID: 21300000, guid: 40683c9d94f084377a6c4cc38eff8954, type: 3}
+    - Path: Assets/TPSBR/UI/GVUI/AvailableGames/Tabs Icons/crown-platinum.png
+      Asset: {fileID: 21300000, guid: b1f895aa7870042969d3532aebe9ef0f, type: 3}
+    - Path: Assets/TPSBR/UI/GVUI/AvailableGames/Tabs Icons/crown-silver.png
+      Asset: {fileID: 21300000, guid: 78bee6e6a63a846fbbd0085b55a11898, type: 3}
+    - Path: Assets/TPSBR/UI/GVUI/AvailableGames/Tabs Icons/crown-wood.png
+      Asset: {fileID: 21300000, guid: 9d2b7dca9812341c484bb8397718971b, type: 3}
+    - Path: Assets/TPSBR/UI/GVUI/MainMultiMenu/citaadel-district-1.png
+      Asset: {fileID: 21300000, guid: ede111a71209643adb5f453e2a3fe97c, type: 3}
+    - Path: Assets/TPSBR/UI/HUDNotifications/hud_airdrop.png
+      Asset: {fileID: 21300000, guid: 6bb50f0aab356e140b3121383cb86ea6, type: 3}
+    - Path: Assets/TPSBR/UI/HUDNotifications/hud_floorisfomo.png
+      Asset: {fileID: 21300000, guid: dc10bfea27d04e345a0c0715f496ecd8, type: 3}
+    - Path: Assets/TPSBR/UI/HUDNotifications/hud_opponentrekt.png
+      Asset: {fileID: 21300000, guid: a5eafe8ed2030154e983d674d6554567, type: 3}
+    - Path: Assets/TPSBR/UI/HUDNotifications/hud_roofnowopen.png
+      Asset: {fileID: 21300000, guid: 6f048e61ca9efd0499a1b5bad86ed22c, type: 3}
+    - Path: Assets/TPSBR/UI/HUDNotifications/hud_showdown.png
+      Asset: {fileID: 21300000, guid: d1e3ffaabb9e63d47ac6851b74037576, type: 3}
+  Materials:
+    Assets: []
+  AudioClips:
+    Assets:
+    - Path: Assets/TPSBR/Audio/Announcer/1.wav
+      Asset: {fileID: 8300000, guid: 65f00b3e752471b42943a8382380fab4, type: 3}
+    - Path: Assets/TPSBR/Audio/Announcer/10.wav
+      Asset: {fileID: 8300000, guid: 6d13fd0a23f189544b056d02a17a2410, type: 3}
+    - Path: Assets/TPSBR/Audio/Announcer/2.wav
+      Asset: {fileID: 8300000, guid: 309cc2ec8ce23424298ac561510be29e, type: 3}
+    - Path: Assets/TPSBR/Audio/Announcer/3.wav
+      Asset: {fileID: 8300000, guid: 7d5ccb95a16d60642aefaf6741d0aa19, type: 3}
+    - Path: Assets/TPSBR/Audio/Announcer/4.wav
+      Asset: {fileID: 8300000, guid: 2cc696d0df27ebf43b732e3f00d52c4b, type: 3}
+    - Path: Assets/TPSBR/Audio/Announcer/5.wav
+      Asset: {fileID: 8300000, guid: 83f0921d8cbd1ab4f976882215391600, type: 3}
+    - Path: Assets/TPSBR/Audio/Announcer/6.wav
+      Asset: {fileID: 8300000, guid: c0230787696fa7c4eb11fcb0803a09a4, type: 3}
+    - Path: Assets/TPSBR/Audio/Announcer/7.wav
+      Asset: {fileID: 8300000, guid: 043fd28ef4c7cf147a97ad82d8aa118d, type: 3}
+    - Path: Assets/TPSBR/Audio/Announcer/8.wav
+      Asset: {fileID: 8300000, guid: 4c279412e3828794bbb1ec1202c7865f, type: 3}
+    - Path: Assets/TPSBR/Audio/Announcer/9.wav
+      Asset: {fileID: 8300000, guid: 6c25e3e0d4a9de244bdc7bd25cf11781, type: 3}
+    - Path: Assets/TPSBR/Audio/Announcer/DoubleKill.wav
+      Asset: {fileID: 8300000, guid: 629719cfe8d857b4aaa77d028ed7eb75, type: 3}
+    - Path: Assets/TPSBR/Audio/Announcer/FiveKillsRemaining.wav
+      Asset: {fileID: 8300000, guid: 395bc351f35b9cb4e966940b99664ce8, type: 3}
+    - Path: Assets/TPSBR/Audio/Announcer/FivePlayersRemaining.wav
+      Asset: {fileID: 8300000, guid: a7e0e931605e07c48ac91b19ff835f99, type: 3}
+    - Path: Assets/TPSBR/Audio/Announcer/OneKillRemaining.wav
+      Asset: {fileID: 8300000, guid: 2d565f12488aeb94aac39d23c417fc03, type: 3}
+    - Path: Assets/TPSBR/Audio/Announcer/OneMinuteRemaining.wav
+      Asset: {fileID: 8300000, guid: 67d4bfd01de56ce47a9af02c4364338e, type: 3}
+    - Path: Assets/TPSBR/Audio/Announcer/QuadrupleKill.wav
+      Asset: {fileID: 8300000, guid: 4e97f6fd2b1c0fd46a191eb50397b478, type: 3}
+    - Path: Assets/TPSBR/Audio/Announcer/TenKillsRemaining.wav
+      Asset: {fileID: 8300000, guid: cefa1be07fba4bb4da32dafe6a06fd37, type: 3}
+    - Path: Assets/TPSBR/Audio/Announcer/TenPlayersRemaining.wav
+      Asset: {fileID: 8300000, guid: a8886082fb42434409d2b659c1497397, type: 3}
+    - Path: Assets/TPSBR/Audio/Announcer/ThreeKillsRemaining.wav
+      Asset: {fileID: 8300000, guid: 7f4f527ed005767438ca3ac022385e89, type: 3}
+    - Path: Assets/TPSBR/Audio/Announcer/ThreePlayersRemaining.wav
+      Asset: {fileID: 8300000, guid: 7aec9db63c5e01647abeaa1b6aa7278d, type: 3}
+    - Path: Assets/TPSBR/Audio/Announcer/TripleKill.wav
+      Asset: {fileID: 8300000, guid: 744307d1a0a2c27419bf1c3d0ad1c916, type: 3}
+    - Path: Assets/TPSBR/Audio/Announcer/TwoKillsRemaining.wav
+      Asset: {fileID: 8300000, guid: d56af6a84350bb24ab108a0fe82f3393, type: 3}
+    - Path: Assets/TPSBR/Audio/Announcer/Unstoppable.wav
+      Asset: {fileID: 8300000, guid: c56de56c1abefc4478ed41414f8c71bf, type: 3}
+    - Path: Assets/TPSBR/Audio/Announcer/floorisfomo.wav
+      Asset: {fileID: 8300000, guid: 3f9ceae50e4a6b844b2ac567bab39be6, type: 3}
+    - Path: Assets/TPSBR/Audio/Announcer/incomingairdrop.wav
+      Asset: {fileID: 8300000, guid: 4f95e419f9c8ceb43b948656eb6a3560, type: 3}
+    - Path: Assets/TPSBR/Audio/Announcer/opponentrekt.wav
+      Asset: {fileID: 8300000, guid: 0603338567908f04aa3270b26363f60a, type: 3}
+    - Path: Assets/TPSBR/Audio/Announcer/rekt.wav
+      Asset: {fileID: 8300000, guid: 34ef71a698a1a2d4dacc9f875a01a11f, type: 3}
+    - Path: Assets/TPSBR/Audio/Announcer/roofnowopen.wav
+      Asset: {fileID: 8300000, guid: 00f3afd43af75be4da2c3f723f03b259, type: 3}
+    - Path: Assets/TPSBR/Audio/Announcer/showdown.wav
+      Asset: {fileID: 8300000, guid: f6347a632f8cc5345820035030e2318d, type: 3}
+    - Path: Assets/TPSBR/Audio/aarena_music/Digital20Grimoire20ext20v1.2.mp3
+      Asset: {fileID: 8300000, guid: 4e06757c3f0cb884a9075f62dfa12c7d, type: 3}
+    - Path: Assets/TPSBR/Audio/aarena_music/theme_aarena_zane_halloween.ogg
+      Asset: {fileID: 8300000, guid: 17f8fbd8d1b8b46cc986d68bf2b611b7, type: 3}

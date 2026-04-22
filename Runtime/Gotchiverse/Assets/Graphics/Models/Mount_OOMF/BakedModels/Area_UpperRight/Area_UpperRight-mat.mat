@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 32
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Area_UpperRight-mat
+  m_Shader: {fileID: -6465566751694194690, guid: 1a42bf92dba4788408892d7ebe13a43b,
+    type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _EMISSION
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 98fcb7f521d232d428970525a17733a5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal_Map:
+        m_Texture: {fileID: 2800000, guid: efd8af4f17f8c2848ae2666c8ec81a7a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OverlayTexture:
+        m_Texture: {fileID: 2800000, guid: ded2c10046d59fb49853f942b33e02ea, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SnowMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_8fab55b0fc5948bb9d779cb1bd5ea736_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _EnablePerRockColorRandomization: 0
+    - _Fresnel_Opacity: 1
+    - _Fresnel_Power: 2.02
+    - _Heigh_Blending_Smoothness: 17.81
+    - _Height_Blending_Heigfht: -2.85
+    - _Normal_Strength: 0
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _Smoothness: 0.1
+    - _SnowAdd: -0.1
+    - _SnowEnabled: 0
+    - _SnowOpacityBlending: 8.56
+    - _SnowSmoothness: 49.13
+    - _UseOverlayColor: 0
+    m_Colors:
+    - _Base_Color: {r: 0.4528302, g: 0.33680314, b: 0.24563903, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Fresnel_Color: {r: 0.7075472, g: 0.12334789, b: 0, a: 1}
+    - _Overlay_Color: {r: 0.7294118, g: 0.38431373, b: 0, a: 1}
+    - _PerRockColorRandomizationVariation: {r: 0.95, g: 1.57, b: 0, a: 0}
+    - _Secondary_Color: {r: 0.5597484, g: 0.24655586, b: 0, a: 1}
+    - _SnowColor: {r: 0.7610062, g: 0.9552559, b: 1, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!114 &1160384299650965881
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 10

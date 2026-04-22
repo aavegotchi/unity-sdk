@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68e8081695d64cb9b6de9a746eebaacb, type: 3}
+  m_Name: RemainingPlayers_2
+  m_EditorClassIdentifier: 
+  _oneTimeAnnouncement: 0
+  _defaultSetup:
+    Priority: 200
+    Channel: 2
+    TextMessage: Showdown!
+    AudioMessage:
+      Clips:
+      - {fileID: 8300000, guid: f6347a632f8cc5345820035030e2318d, type: 3}
+      Volume: 1
+      MaxPitchChange: 0
+      Delay: 0
+      Loop: 0
+      FadeIn: 0
+      FadeOut: 0
+      Repeat: 0
+      RepeatPlayCount: 0
+      RepeatDelay: 0
+    Cooldown: 1.5
+    Duration: 4
+    ValidTime: 10
+    Color: {r: 0.21601842, g: 0.8113208, b: 0.17986828, a: 0}
+    FeedMessage: 
+  _remainingPlayers: 2
+  _minNextAnnouncementTime: 20

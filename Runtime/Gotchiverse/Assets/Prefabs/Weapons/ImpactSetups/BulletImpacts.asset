@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74430ab6bdbd4fdeb32efa169eb6e200, type: 3}
+  m_Name: BulletImpacts
+  m_EditorClassIdentifier: 
+  _fallbackRangedImpact: {fileID: 3085737180633283584, guid: 69620b64ce3518c4893c3cab20cd4731, type: 3}
+  _fallbackMeleeImpact: {fileID: 3085737180633283584, guid: af0afa42e8040c64aa7d87dd5a5428e2, type: 3}
+  _fallbackGrenadeImpact: {fileID: 1651363388222792, guid: 4c385ea625838b1489592953690f867f, type: 3}
+  _impacts:
+  - Tag: Lick.Ranged.Hit
+    Impact: {fileID: 7037477602932804993, guid: a89035cbb48f94f7fae0abe68c643754, type: 3}
+  - Tag: Lick.Melee.Hit
+    Impact: {fileID: 4079251959652221617, guid: fbfb0c29130db45ea8223266140a3dab, type: 3}
+  - Tag: Lick.Grenade.Hit
+    Impact: {fileID: 4591392690140796422, guid: a3b8b2b663ecc477ca32a23fdae778ae, type: 3}
+  - Tag: Gotchi.Ranged.Hit
+    Impact: {fileID: 1795992203533318, guid: 751a5afd9ca23b646ab387fc5801bfaf, type: 3}
+  - Tag: Gotchi.Melee.Hit
+    Impact: {fileID: 1795992203533318, guid: 825a6b950d7db224f9004c5d99f33bc7, type: 3}
+  - Tag: Gotchi.Grenade.Hit
+    Impact: {fileID: 1795992203533318, guid: 14453dcf2b61a92479b896e7a4b8cfae, type: 3}

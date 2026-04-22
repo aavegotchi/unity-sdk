@@ -1,0 +1,210 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7d4eff1333b3a642abcfdca311f5049, type: 3}
+  m_Name: MapSettings
+  m_EditorClassIdentifier: 
+  _maps:
+  - _id: Map.Aarena_1
+    _scenePath: Assets/TPSBR/Scenes/Aarena_1.unity
+    _displayName: ARENA
+    _description: 
+    _image: {fileID: 21300000, guid: c667b9f3b2cee45c683410702c28face, type: 3}
+    _recommendedPlayers: 10
+    _maxPlayers: 200
+    _showInMapSelection: 1
+    _themeType: 0
+    _gameplayType: 2
+    _startImediately: 0
+    _visibleOnExtend: 1
+    _isGotchiverseMap: 0
+  - _id: Map.Game
+    _scenePath: Assets/TPSBR/Scenes/Game.unity
+    _displayName: Debug Game
+    _description: 
+    _image: {fileID: 21300000, guid: f3a98a44addd7bd4c920c80dcfd4eed3, type: 3}
+    _recommendedPlayers: 200
+    _maxPlayers: 200
+    _showInMapSelection: 0
+    _themeType: 0
+    _gameplayType: 2
+    _startImediately: 0
+    _visibleOnExtend: 0
+    _isGotchiverseMap: 0
+  - _id: Map.Assets
+    _scenePath: Assets/TPSBR/Gotchiverse/Scenes/Asset_Review.unity
+    _displayName: Assets Review
+    _description: 
+    _image: {fileID: 21300000, guid: b229bcec050f1f043a9c5a841d540f5b, type: 3}
+    _recommendedPlayers: 10
+    _maxPlayers: 10
+    _showInMapSelection: 0
+    _themeType: 0
+    _gameplayType: 0
+    _startImediately: 0
+    _visibleOnExtend: 0
+    _isGotchiverseMap: 0
+  - _id: Map.Citaadel
+    _scenePath: Assets/TPSBR/Gotchiverse/Scenes/Citaadel_mock_up.unity
+    _displayName: Citaadel
+    _description: 'Old Citaadel '
+    _image: {fileID: 21300000, guid: d494b58b2630e4a3cbee75e487a3d7b9, type: 3}
+    _recommendedPlayers: 10
+    _maxPlayers: 10
+    _showInMapSelection: 0
+    _themeType: 0
+    _gameplayType: 3
+    _startImediately: 0
+    _visibleOnExtend: 0
+    _isGotchiverseMap: 0
+  - _id: Map.Duel
+    _scenePath: Assets/TPSBR/Scenes/Duel.unity
+    _displayName: Duel
+    _description: 
+    _image: {fileID: 21300000, guid: 8b5d21b676ca24f58bd371eb4397c55a, type: 3}
+    _recommendedPlayers: 2
+    _maxPlayers: 2
+    _showInMapSelection: 0
+    _themeType: 0
+    _gameplayType: 2
+    _startImediately: 0
+    _visibleOnExtend: 0
+    _isGotchiverseMap: 0
+  - _id: Map.Lounge
+    _scenePath: Assets/TPSBR/Scenes/Observation_lounge.unity
+    _displayName: Lounge
+    _description: 
+    _image: {fileID: 21300000, guid: 9cebf4713345b42ed900b207c42f017d, type: 3}
+    _recommendedPlayers: 200
+    _maxPlayers: 200
+    _showInMapSelection: 0
+    _themeType: 0
+    _gameplayType: 3
+    _startImediately: 0
+    _visibleOnExtend: 0
+    _isGotchiverseMap: 0
+  - _id: Map.DownTown
+    _scenePath: Assets/TPSBR/Gotchiverse/Scenes/D1_downTown.unity
+    _displayName: D1 Downtown
+    _description: Enter D1 Dwontown
+    _image: {fileID: 21300000, guid: ede111a71209643adb5f453e2a3fe97c, type: 3}
+    _recommendedPlayers: 10
+    _maxPlayers: 10
+    _showInMapSelection: 0
+    _themeType: 0
+    _gameplayType: 3
+    _startImediately: 1
+    _visibleOnExtend: 0
+    _isGotchiverseMap: 1
+  - _id: GotchiverseZone
+    _scenePath: Assets/TPSBR/Gotchiverse/Scenes/GotchiverseZone.unity
+    _displayName: District
+    _description: Gotchiverse Zone, please choose a district!
+    _image: {fileID: 21300000, guid: 1b0d242122bdc439c84fdbdb22e451a0, type: 3}
+    _recommendedPlayers: 10
+    _maxPlayers: 80
+    _showInMapSelection: 1
+    _themeType: 0
+    _gameplayType: 3
+    _startImediately: 1
+    _visibleOnExtend: 1
+    _isGotchiverseMap: 1
+  - _id: LI
+    _scenePath: Assets/TPSBR/Gotchiverse/Scenes/LickInvasionScene.unity
+    _displayName: LickInvasion
+    _description: Lick Invasion!
+    _image: {fileID: 21300000, guid: e07b4a3f78f6841ce9737b2d238ac917, type: 3}
+    _recommendedPlayers: 5
+    _maxPlayers: 5
+    _showInMapSelection: 1
+    _themeType: 0
+    _gameplayType: 4
+    _startImediately: 1
+    _visibleOnExtend: 1
+    _isGotchiverseMap: 1
+  - _id: RRH
+    _scenePath: Assets/TPSBR/Gotchiverse/Scenes/RR_Halloween.unity
+    _displayName: Halloween
+    _description: Halloween
+    _image: {fileID: 21300000, guid: e07b4a3f78f6841ce9737b2d238ac917, type: 3}
+    _recommendedPlayers: 5
+    _maxPlayers: 5
+    _showInMapSelection: 1
+    _themeType: 0
+    _gameplayType: 3
+    _startImediately: 1
+    _visibleOnExtend: 1
+    _isGotchiverseMap: 1
+  - _id: PM
+    _scenePath: Assets/TPSBR/Gotchiverse/Scenes/PM_Map.unity
+    _displayName: Prong Medow
+    _description: Prong Medow map
+    _image: {fileID: 21300000, guid: 6035e16e8596a4f029cf60aff241127e, type: 3}
+    _recommendedPlayers: 5
+    _maxPlayers: 5
+    _showInMapSelection: 1
+    _themeType: 0
+    _gameplayType: 3
+    _startImediately: 1
+    _visibleOnExtend: 1
+    _isGotchiverseMap: 1
+  - _id: MO
+    _scenePath: Assets/TPSBR/Gotchiverse/Scenes/MO_Map.unity
+    _displayName: Mount Oomf
+    _description: Mount Oomf MAP
+    _image: {fileID: 21300000, guid: 6035e16e8596a4f029cf60aff241127e, type: 3}
+    _recommendedPlayers: 5
+    _maxPlayers: 5
+    _showInMapSelection: 1
+    _themeType: 0
+    _gameplayType: 3
+    _startImediately: 1
+    _visibleOnExtend: 1
+    _isGotchiverseMap: 1
+  - _id: WIP
+    _scenePath: Assets/TPSBR/Gotchiverse/Scenes/WIP_Map.unity
+    _displayName: WIP
+    _description: WIP
+    _image: {fileID: 21300000, guid: 6035e16e8596a4f029cf60aff241127e, type: 3}
+    _recommendedPlayers: 5
+    _maxPlayers: 5
+    _showInMapSelection: 1
+    _themeType: 0
+    _gameplayType: 3
+    _startImediately: 1
+    _visibleOnExtend: 1
+    _isGotchiverseMap: 1
+  - _id: NFT
+    _scenePath: Assets/TPSBR/Gotchiverse/Scenes/NFT_Map.unity
+    _displayName: NFT
+    _description: NFT
+    _image: {fileID: 21300000, guid: 6035e16e8596a4f029cf60aff241127e, type: 3}
+    _recommendedPlayers: 5
+    _maxPlayers: 5
+    _showInMapSelection: 1
+    _themeType: 0
+    _gameplayType: 3
+    _startImediately: 1
+    _visibleOnExtend: 1
+    _isGotchiverseMap: 1
+  - _id: D1S
+    _scenePath: Assets/TPSBR/Gotchiverse/Scenes/D1_Small.unity
+    _displayName: D1S
+    _description: D1S
+    _image: {fileID: 21300000, guid: 6035e16e8596a4f029cf60aff241127e, type: 3}
+    _recommendedPlayers: 5
+    _maxPlayers: 5
+    _showInMapSelection: 1
+    _themeType: 0
+    _gameplayType: 3
+    _startImediately: 1
+    _visibleOnExtend: 1
+    _isGotchiverseMap: 1

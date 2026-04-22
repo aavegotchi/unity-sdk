@@ -1,0 +1,213 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c30145f2c2cb584b9da6d84e7ab9973, type: 3}
+  m_Name: GlobalSettings
+  m_EditorClassIdentifier: 
+  GameType: 1
+  RunnerPrefab: {fileID: 3427936558554746844, guid: 36ba3480ded34f441a0d952459870465, type: 3}
+  SimulateMobileInput: 0
+  ThemeSettings: {fileID: 11400000, guid: 1be5ab8f203594dc7882a697d0cf7625, type: 2}
+  Agent:
+    SelectedBand: 0
+    _defaultAgents: {fileID: 11400000, guid: e4ec6148f129748699fe3d42e8f3f578, type: 2}
+    _agentPrefabList:
+    - GameplayType: 0
+      Prefab: {fileID: 7625200539080901463, guid: c17b47fcacdfc8d4b80809005a2b2555, type: 3}
+    - GameplayType: 1
+      Prefab: {fileID: 7625200539080901463, guid: c17b47fcacdfc8d4b80809005a2b2555, type: 3}
+    - GameplayType: 2
+      Prefab: {fileID: 7625200539080901463, guid: c17b47fcacdfc8d4b80809005a2b2555, type: 3}
+    - GameplayType: 3
+      Prefab: {fileID: 7625200539080901463, guid: c17b47fcacdfc8d4b80809005a2b2555, type: 3}
+    - GameplayType: 4
+      Prefab: {fileID: 7625200539080901463, guid: c17b47fcacdfc8d4b80809005a2b2555, type: 3}
+    - GameplayType: 5
+      Prefab: {fileID: 7625200539080901463, guid: c17b47fcacdfc8d4b80809005a2b2555, type: 3}
+    _ownerAgents: []
+  Map: {fileID: 11400000, guid: e4dc9cb883a3cab47a3a7f8fafe0cb18, type: 2}
+  Network: {fileID: 11400000, guid: a62d9094641629149b9e79d5232837b2, type: 2}
+  DefaultOptions:
+    _values:
+    - Key: Windowed
+      Type: 1
+      BoolValue: 0
+      FloatValue:
+        Value: 0
+        MinValue: 0
+        MaxValue: 0
+      IntValue:
+        Value: 0
+        MinValue: 0
+        MaxValue: 0
+      StringValue: 
+    - Key: GraphicsQuality
+      Type: 3
+      BoolValue: 0
+      FloatValue:
+        Value: 0
+        MinValue: 0
+        MaxValue: 0
+      IntValue:
+        Value: 2
+        MinValue: 0
+        MaxValue: 0
+      StringValue: 
+    - Key: Resolution
+      Type: 3
+      BoolValue: 0
+      FloatValue:
+        Value: 0
+        MinValue: 0
+        MaxValue: 0
+      IntValue:
+        Value: -1
+        MinValue: 0
+        MaxValue: 0
+      StringValue: 
+    - Key: MusicVolume
+      Type: 2
+      BoolValue: 0
+      FloatValue:
+        Value: 0.4
+        MinValue: 0.001
+        MaxValue: 1
+      IntValue:
+        Value: 0
+        MinValue: 0
+        MaxValue: 0
+      StringValue: 
+    - Key: EffectsVolume
+      Type: 2
+      BoolValue: 0
+      FloatValue:
+        Value: 1
+        MinValue: 0.001
+        MaxValue: 1
+      IntValue:
+        Value: 0
+        MinValue: 0
+        MaxValue: 0
+      StringValue: 
+    - Key: TargetFPS
+      Type: 3
+      BoolValue: 0
+      FloatValue:
+        Value: 0
+        MinValue: -80
+        MaxValue: 0
+      IntValue:
+        Value: -1
+        MinValue: -1
+        MaxValue: 500
+      StringValue: 
+    - Key: LimitFPS
+      Type: 1
+      BoolValue: 1
+      FloatValue:
+        Value: 0
+        MinValue: -80
+        MaxValue: 0
+      IntValue:
+        Value: 60
+        MinValue: 0
+        MaxValue: 0
+      StringValue: 
+    - Key: Sensitivity
+      Type: 2
+      BoolValue: 0
+      FloatValue:
+        Value: 2.8
+        MinValue: 0.05
+        MaxValue: 5
+      IntValue:
+        Value: 0
+        MinValue: 0
+        MaxValue: 0
+      StringValue: 
+    - Key: AimSensitivity
+      Type: 2
+      BoolValue: 0
+      FloatValue:
+        Value: 0.7
+        MinValue: 0.05
+        MaxValue: 1
+      IntValue:
+        Value: 0
+        MinValue: 0
+        MaxValue: 0
+      StringValue: 
+    - Key: VSync
+      Type: 1
+      BoolValue: 0
+      FloatValue:
+        Value: 0
+        MinValue: 0
+        MaxValue: 0
+      IntValue:
+        Value: 0
+        MinValue: 0
+        MaxValue: 0
+      StringValue: 
+    - Key: Region
+      Type: 4
+      BoolValue: 0
+      FloatValue:
+        Value: 0
+        MinValue: 0
+        MaxValue: 0
+      IntValue:
+        Value: 0
+        MinValue: 0
+        MaxValue: 0
+      StringValue: eu
+    - Key: RightHand
+      Type: 1
+      BoolValue: 1
+      FloatValue:
+        Value: 0
+        MinValue: 0
+        MaxValue: 0
+      IntValue:
+        Value: 0
+        MinValue: 0
+        MaxValue: 0
+      StringValue: 
+    - Key: InvertY
+      Type: 1
+      BoolValue: 0
+      FloatValue:
+        Value: 0
+        MinValue: 0
+        MaxValue: 0
+      IntValue:
+        Value: 0
+        MinValue: 0
+        MaxValue: 0
+      StringValue: 
+    - Key: CameraDistance
+      Type: 2
+      BoolValue: 0
+      FloatValue:
+        Value: 0.2
+        MinValue: 0.001
+        MaxValue: 1
+      IntValue:
+        Value: 0
+        MinValue: 0
+        MaxValue: 0
+      StringValue: 
+  CommonPrefabs: {fileID: 11400000, guid: 747aeaeae81e24f56a4a261ea2788821, type: 2}
+  EnvironmentName: development
+  OverrideGameConfig: 0
+  GameConfigOverride: {fileID: 11400000, guid: c7ec8ef26ef8341da954979f1ec97f7d, type: 2}
+  ThirdwebConfig: {fileID: 11400000, guid: 42283c00e42124dedb5b65c6688dbf0c, type: 2}
+  Impersonate: 

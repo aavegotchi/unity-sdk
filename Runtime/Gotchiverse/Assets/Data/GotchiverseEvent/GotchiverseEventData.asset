@@ -1,0 +1,1033 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f08c119222b439438c1d13757499f8e, type: 3}
+  m_Name: GotchiverseEventData
+  m_EditorClassIdentifier: 
+  PickupItemSpawningSettigns:
+  - Name: Lawn Orb Small
+    IsActive: 0
+    Type: 100
+    Tier: 0
+    MaxCount: 3
+    RespawnRate: 120
+    RespawnThreshold: 2
+  - Name: Lawn Orb Large
+    IsActive: 0
+    Type: 101
+    Tier: 0
+    MaxCount: 1
+    RespawnRate: 120
+    RespawnThreshold: 1
+  - Name: Beach Ball
+    IsActive: 0
+    Type: 102
+    Tier: 0
+    MaxCount: 5
+    RespawnRate: 180
+    RespawnThreshold: 2
+  - Name: Camera
+    IsActive: 1
+    Type: 103
+    Tier: 0
+    MaxCount: 0
+    RespawnRate: 0
+    RespawnThreshold: 0
+  - Name: Wings
+    IsActive: 1
+    Type: 200
+    Tier: 1
+    MaxCount: 5
+    RespawnRate: 120
+    RespawnThreshold: 2
+  - Name: Ap Bolt
+    IsActive: 1
+    Type: 201
+    Tier: 1
+    MaxCount: 5
+    RespawnRate: 120
+    RespawnThreshold: 2
+  - Name: bubble Blower
+    IsActive: 1
+    Type: 300
+    Tier: 2
+    MaxCount: 5
+    RespawnRate: 180
+    RespawnThreshold: 2
+  - Name: Coffee Cup
+    IsActive: 1
+    Type: 301
+    Tier: 2
+    MaxCount: 5
+    RespawnRate: 180
+    RespawnThreshold: 2
+  - Name: Battery
+    IsActive: 1
+    Type: 302
+    Tier: 2
+    MaxCount: 5
+    RespawnRate: 180
+    RespawnThreshold: 2
+  EventCalendarData:
+    EventId: launch-party
+    EventSteps:
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:00:01
+      EventType: 1
+      SpawnSettings:
+        Type: 301
+        Zone: 8
+        SpawnPoints: 09000000
+        Description: 1 Coffee Cup appears
+      SAnnouceSettings:
+        Type: 0
+        Text: WELCOME TO THE LAUNCH PARTY!
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:13:00
+      EventType: 0
+      SpawnSettings:
+        Type: 301
+        Zone: 3
+        SpawnPoints: 0100000003000000050000000700000009000000
+        Description: 5 Coffee Cups appear up along the ceiling for gotchis to collect
+          and use.
+      SAnnouceSettings:
+        Type: 0
+        Text: 
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:14:00
+      EventType: 0
+      SpawnSettings:
+        Type: 301
+        Zone: 3
+        SpawnPoints: 02000000050000000700000009000000
+        Description: 4 more Coffee Cups appear
+      SAnnouceSettings:
+        Type: 0
+        Text: 
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:15:00
+      EventType: 0
+      SpawnSettings:
+        Type: 103
+        Zone: 3
+        SpawnPoints: 0e000000
+        Description: 4 more Coffee Cups appear
+      SAnnouceSettings:
+        Type: 0
+        Text: 
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:16:00
+      EventType: 0
+      SpawnSettings:
+        Type: 300
+        Zone: 3
+        SpawnPoints: 080000000e0000000200000005000000
+        Description: 4 Bubble Blowers appear
+      SAnnouceSettings:
+        Type: 0
+        Text: 
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:17:00
+      EventType: 0
+      SpawnSettings:
+        Type: 103
+        Zone: 3
+        SpawnPoints: 030000000400000007000000090000000e000000
+        Description: 5 Cameras appear
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 Cameras appear
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:17:30
+      EventType: 0
+      SpawnSettings:
+        Type: 302
+        Zone: 3
+        SpawnPoints: 06000000090000000200000004000000
+        Description: 4 Batteries appear
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 Cameras appear
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:18:00
+      EventType: 0
+      SpawnSettings:
+        Type: 302
+        Zone: 3
+        SpawnPoints: 01000000060000000e000000
+        Description: 3 Batteries appear
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 Cameras appear
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:18:00
+      EventType: 0
+      SpawnSettings:
+        Type: 301
+        Zone: 3
+        SpawnPoints: 0b0000000d000000
+        Description: 2 Coffee Cups appear
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 Cameras appear
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:18:00
+      EventType: 0
+      SpawnSettings:
+        Type: 300
+        Zone: 3
+        SpawnPoints: 03000000070000000a000000
+        Description: 3 Bubble Blowers appear
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 Cameras appear
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:18:00
+      EventType: 0
+      SpawnSettings:
+        Type: 103
+        Zone: 3
+        SpawnPoints: 0e000000
+        Description: 1 Camera appears
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 Cameras appear
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:18:05
+      EventType: 0
+      SpawnSettings:
+        Type: 103
+        Zone: 3
+        SpawnPoints: 04000000
+        Description: 1 Camera appears
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 Cameras appear
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:18:10
+      EventType: 0
+      SpawnSettings:
+        Type: 103
+        Zone: 3
+        SpawnPoints: 09000000
+        Description: 1 Camera appears
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 Cameras appear
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:18:15
+      EventType: 0
+      SpawnSettings:
+        Type: 103
+        Zone: 3
+        SpawnPoints: 03000000
+        Description: 1 Camera appears
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 Cameras appear
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:19:10
+      EventType: 0
+      SpawnSettings:
+        Type: 103
+        Zone: 3
+        SpawnPoints: 07000000
+        Description: 1 Camera appears
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 Cameras appear
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:19:10
+      EventType: 0
+      SpawnSettings:
+        Type: 301
+        Zone: 3
+        SpawnPoints: 0100000003000000050000000700000009000000
+        Description: 5 Coffee Cups appear
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 Cameras appear
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:19:30
+      EventType: 0
+      SpawnSettings:
+        Type: 300
+        Zone: 3
+        SpawnPoints: 080000000d0000000e0000000b0000000200000004000000
+        Description: 6 Bubble Blowers appear
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 Cameras appear
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:20:00
+      EventType: 0
+      SpawnSettings:
+        Type: 103
+        Zone: 3
+        SpawnPoints: 010000000200000003000000040000000500000006000000070000000800000009000000
+        Description: 9 Cameras appear
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 Cameras appear
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:21:30
+      EventType: 0
+      SpawnSettings:
+        Type: 302
+        Zone: 3
+        SpawnPoints: 020000000400000006000000080000000a000000
+        Description: 5 Batteries appear
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 Cameras appear
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:22:00
+      EventType: 0
+      SpawnSettings:
+        Type: 103
+        Zone: 3
+        SpawnPoints: 0e000000
+        Description: 1 Camera appears
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 Cameras appear
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 1
+      StartTime:
+        _timeSpan: 00:22:00
+      EventType: 2
+      SpawnSettings:
+        Type: 103
+        Zone: 3
+        SpawnPoints: 0e000000
+        Description: 1 Camera appears
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 Cameras appear
+      SCommandSettings:
+        Type: 1
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:22:00
+      EventType: 1
+      SpawnSettings:
+        Type: 103
+        Zone: 3
+        SpawnPoints: 0e000000
+        Description: 1 Camera appears
+      SAnnouceSettings:
+        Type: 103
+        Text: 4 CAMERAS NEAR GREAT PORTAL
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:22:01
+      EventType: 0
+      SpawnSettings:
+        Type: 103
+        Zone: 8
+        SpawnPoints: 0100000004000000070000000a000000
+        Description: 4 Camera appears
+      SAnnouceSettings:
+        Type: 103
+        Text: "4 CAMERAS NEAR GREAT PORTAL\t\t\t"
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:22:02
+      EventType: 0
+      SpawnSettings:
+        Type: 302
+        Zone: 8
+        SpawnPoints: 020000000500000008000000
+        Description: 3 Batteries appear
+      SAnnouceSettings:
+        Type: 103
+        Text: "4 CAMERAS NEAR GREAT PORTAL\t\t\t"
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:22:03
+      EventType: 0
+      SpawnSettings:
+        Type: 300
+        Zone: 8
+        SpawnPoints: 03000000060000000b000000
+        Description: 3 Bubble Blowers appear
+      SAnnouceSettings:
+        Type: 103
+        Text: "4 CAMERAS NEAR GREAT PORTAL\t\t\t"
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:22:03
+      EventType: 0
+      SpawnSettings:
+        Type: 301
+        Zone: 8
+        SpawnPoints: 09000000
+        Description: 1 Coffee Cup appears
+      SAnnouceSettings:
+        Type: 103
+        Text: "4 CAMERAS NEAR GREAT PORTAL\t\t\t"
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:22:30
+      EventType: 1
+      SpawnSettings:
+        Type: 301
+        Zone: 8
+        SpawnPoints: 09000000
+        Description: 1 Coffee Cup appears
+      SAnnouceSettings:
+        Type: 0
+        Text: Pay attention! The light beams point out where the cameras are getting
+          spawned.
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:23:00
+      EventType: 1
+      SpawnSettings:
+        Type: 301
+        Zone: 8
+        SpawnPoints: 09000000
+        Description: 1 Coffee Cup appears
+      SAnnouceSettings:
+        Type: 103
+        Text: 7 CAMERAS IN THE GARDEN MAZE
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:23:01
+      EventType: 0
+      SpawnSettings:
+        Type: 103
+        Zone: 2
+        SpawnPoints: 03000000040000000500000006000000070000000800000009000000
+        Description: 7 Camera appear
+      SAnnouceSettings:
+        Type: 103
+        Text: "7 CAMERAS IN THE GARDEN MAZE\t\t\t"
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:23:02
+      EventType: 0
+      SpawnSettings:
+        Type: 301
+        Zone: 2
+        SpawnPoints: 0000000002000000
+        Description: 2 Coffee Cups appear
+      SAnnouceSettings:
+        Type: 103
+        Text: "7 CAMERAS IN THE GARDEN MAZE\t\t\t"
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:24:00
+      EventType: 1
+      SpawnSettings:
+        Type: 301
+        Zone: 2
+        SpawnPoints: 0000000002000000
+        Description: 2 Coffee Cups appear
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 CAMERAS AROUND PRONG MEADOW
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:24:01
+      EventType: 0
+      SpawnSettings:
+        Type: 103
+        Zone: 7
+        SpawnPoints: 050000000600000007000000080000000a0000000b000000
+        Description: 5 Cameras appear
+      SAnnouceSettings:
+        Type: 103
+        Text: "5 CAMERAS AROUND PRONG MEADOW\t\t\t"
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:24:01
+      EventType: 0
+      SpawnSettings:
+        Type: 302
+        Zone: 7
+        SpawnPoints: 010000000300000009000000
+        Description: 2 Batteries appear
+      SAnnouceSettings:
+        Type: 103
+        Text: "5 CAMERAS AROUND PRONG MEADOW\t\t\t"
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:24:03
+      EventType: 0
+      SpawnSettings:
+        Type: 300
+        Zone: 7
+        SpawnPoints: 000000000200000004000000
+        Description: 3 Bubble Blowers appear
+      SAnnouceSettings:
+        Type: 103
+        Text: "5 CAMERAS AROUND PRONG MEADOW\t\t\t"
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:25:00
+      EventType: 1
+      SpawnSettings:
+        Type: 103
+        Zone: 7
+        SpawnPoints: 
+        Description: 10 CAMERAS AT ROFL POND
+      SAnnouceSettings:
+        Type: 103
+        Text: 10 CAMERAS AT ROFL POND
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:25:01
+      EventType: 0
+      SpawnSettings:
+        Type: 103
+        Zone: 9
+        SpawnPoints: 00000000010000000300000005000000060000000700000009000000
+        Description: 7 Cameras appear
+      SAnnouceSettings:
+        Type: 103
+        Text: 10 CAMERAS AT ROFL POND
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:25:02
+      EventType: 0
+      SpawnSettings:
+        Type: 103
+        Zone: 4
+        SpawnPoints: 030000000400000005000000
+        Description: 3 Cameras appear
+      SAnnouceSettings:
+        Type: 103
+        Text: 10 CAMERAS AT ROFL POND
+      SCommandSettings:
+        Type: 0
+    - IsActive: 0
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:25:03
+      EventType: 0
+      SpawnSettings:
+        Type: 102
+        Zone: 9
+        SpawnPoints: 0200000004000000080000000a000000
+        Description: 4 Beach Balls appear
+      SAnnouceSettings:
+        Type: 103
+        Text: 10 CAMERAS AT ROFL POND
+      SCommandSettings:
+        Type: 0
+    - IsActive: 0
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:25:04
+      EventType: 0
+      SpawnSettings:
+        Type: 102
+        Zone: 4
+        SpawnPoints: 000000000100000002000000
+        Description: 3 Beach Balls appear
+      SAnnouceSettings:
+        Type: 102
+        Text: 3 Beach Balls appear
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:27:00
+      EventType: 1
+      SpawnSettings:
+        Type: 102
+        Zone: 4
+        SpawnPoints: 000000000100000002000000
+        Description: 3 Beach Balls appear
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 CAMERAS AT GLTR TOWER
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:27:01
+      EventType: 0
+      SpawnSettings:
+        Type: 103
+        Zone: 5
+        SpawnPoints: 0100000002000000040000000700000009000000
+        Description: 5 Cameras appear
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 CAMERAS AT GLTR TOWER
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:27:02
+      EventType: 0
+      SpawnSettings:
+        Type: 201
+        Zone: 5
+        SpawnPoints: 00000000030000000500000006000000080000000a000000
+        Description: 6 AP Bolts appear
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 CAMERAS AT GLTR TOWER
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:28:00
+      EventType: 1
+      SpawnSettings:
+        Type: 201
+        Zone: 5
+        SpawnPoints: 00000000030000000500000006000000080000000a000000
+        Description: 6 AP Bolts appear
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 CAMERAS AT ROYAL VINEYARD
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:28:01
+      EventType: 0
+      SpawnSettings:
+        Type: 103
+        Zone: 6
+        SpawnPoints: 000000000600000008000000090000000b000000
+        Description: 5 Cameras appear
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 CAMERAS AT ROYAL VINEYARD
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:28:02
+      EventType: 0
+      SpawnSettings:
+        Type: 201
+        Zone: 6
+        SpawnPoints: 020000000400000007000000
+        Description: 3 AP Bolts appear
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 CAMERAS AT ROYAL VINEYARD
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:28:03
+      EventType: 0
+      SpawnSettings:
+        Type: 301
+        Zone: 6
+        SpawnPoints: 0100000003000000050000000a000000
+        Description: 4 Coffee Cups appear
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 CAMERAS AT ROYAL VINEYARD
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:29:00
+      EventType: 1
+      SpawnSettings:
+        Type: 301
+        Zone: 6
+        SpawnPoints: 0100000003000000050000000a000000
+        Description: 4 Coffee Cups appear
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 CAMERAS AROUND GOTCHI KING'S CASTLE
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:29:01
+      EventType: 0
+      SpawnSettings:
+        Type: 103
+        Zone: 12
+        SpawnPoints: 000000000500000006000000070000000f000000
+        Description: 5 Cameras appear
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 CAMERAS AROUND GOTCHI KING'S CASTLE
+      SCommandSettings:
+        Type: 0
+    - IsActive: 0
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:29:02
+      EventType: 0
+      SpawnSettings:
+        Type: 101
+        Zone: 12
+        SpawnPoints: 010000000200000003000000040000000a0000000c0000000e00000010000000
+        Description: 8 Big Orbs appear
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 CAMERAS AROUND GOTCHI KING'S CASTLE
+      SCommandSettings:
+        Type: 0
+    - IsActive: 0
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:29:03
+      EventType: 0
+      SpawnSettings:
+        Type: 100
+        Zone: 12
+        SpawnPoints: 08000000090000000b0000000d000000
+        Description: 4 Small Orbs appear
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 CAMERAS AROUND GOTCHI KING'S CASTLE
+      SCommandSettings:
+        Type: 0
+    - IsActive: 0
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:29:04
+      EventType: 0
+      SpawnSettings:
+        Type: 101
+        Zone: 11
+        SpawnPoints: 0000000001000000030000000600000007000000090000000c0000000e000000
+        Description: 8 Big Orbs appear
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 CAMERAS AROUND GOTCHI KING'S CASTLE
+      SCommandSettings:
+        Type: 0
+    - IsActive: 0
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:29:05
+      EventType: 0
+      SpawnSettings:
+        Type: 100
+        Zone: 11
+        SpawnPoints: 02000000040000000a0000000b0000000d0000000f000000
+        Description: 6 Small Orbs appear
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 CAMERAS AROUND GOTCHI KING'S CASTLE
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:29:06
+      EventType: 0
+      SpawnSettings:
+        Type: 201
+        Zone: 11
+        SpawnPoints: 050000000800000010000000
+        Description: 3 AP Bolts appear
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 CAMERAS AROUND GOTCHI KING'S CASTLE
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:29:30
+      EventType: 1
+      SpawnSettings:
+        Type: 201
+        Zone: 11
+        SpawnPoints: 050000000800000010000000
+        Description: 3 AP Bolts appear
+      SAnnouceSettings:
+        Type: 0
+        Text: Sign the Geist book to mint your Block 1001 Postcard!
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:31:00
+      EventType: 1
+      SpawnSettings:
+        Type: 201
+        Zone: 11
+        SpawnPoints: 050000000800000010000000
+        Description: 5 CAMERAS NEAR THE DAO BUILDING
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 CAMERAS NEAR THE DAO BUILDING
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:31:01
+      EventType: 0
+      SpawnSettings:
+        Type: 103
+        Zone: 13
+        SpawnPoints: 000000000300000004000000060000000b000000
+        Description: 5 Cameras appear
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 CAMERAS NEAR THE DAO BUILDING
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:31:02
+      EventType: 0
+      SpawnSettings:
+        Type: 302
+        Zone: 13
+        SpawnPoints: 0100000002000000050000000700000008000000090000000a0000000c0000000d0000000e0000000f00000010000000
+        Description: 12 Batteries appear
+      SAnnouceSettings:
+        Type: 103
+        Text: 5 CAMERAS NEAR THE DAO BUILDING
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:33:00
+      EventType: 1
+      SpawnSettings:
+        Type: 302
+        Zone: 13
+        SpawnPoints: 0100000002000000050000000700000008000000090000000a0000000c0000000d0000000e0000000f00000010000000
+        Description: 12 Batteries appear
+      SAnnouceSettings:
+        Type: 0
+        Text: Do you believe in second chances? You will find yours in The Gotchiverse!
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:35:00
+      EventType: 1
+      SpawnSettings:
+        Type: 302
+        Zone: 13
+        SpawnPoints: 0100000002000000050000000700000008000000090000000a0000000c0000000d0000000e0000000f00000010000000
+        Description: 12 Batteries appear
+      SAnnouceSettings:
+        Type: 103
+        Text: WELCOME TO THE GOTCHIVERSE! FIND MORE CAMERAS AROUND THE MAP FOR 8
+          MORE HOURS
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:35:01
+      EventType: 0
+      SpawnSettings:
+        Type: 103
+        Zone: 8
+        SpawnPoints: 0100000004000000070000000a000000
+        Description: 4 Camera appears
+      SAnnouceSettings:
+        Type: 103
+        Text: WELCOME TO THE GOTCHIVERSE! FIND MORE CAMERAS AROUND THE MAP FOR 4
+          MORE HOURS
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:35:02
+      EventType: 0
+      SpawnSettings:
+        Type: 302
+        Zone: 8
+        SpawnPoints: 020000000500000008000000
+        Description: 3 Batteries appear
+      SAnnouceSettings:
+        Type: 103
+        Text: WELCOME TO THE GOTCHIVERSE! FIND MORE CAMERAS AROUND THE MAP FOR 4
+          MORE HOURS
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:35:03
+      EventType: 0
+      SpawnSettings:
+        Type: 300
+        Zone: 8
+        SpawnPoints: 03000000060000000b000000
+        Description: 3 Bubble Blowers appear
+      SAnnouceSettings:
+        Type: 103
+        Text: WELCOME TO THE GOTCHIVERSE! FIND MORE CAMERAS AROUND THE MAP FOR 4
+          MORE HOURS
+      SCommandSettings:
+        Type: 0
+    - IsActive: 1
+      IncludeInPast: 0
+      StartTime:
+        _timeSpan: 00:35:04
+      EventType: 0
+      SpawnSettings:
+        Type: 301
+        Zone: 8
+        SpawnPoints: 09000000
+        Description: 1 Coffee Cup appears
+      SAnnouceSettings:
+        Type: 103
+        Text: WELCOME TO THE GOTCHIVERSE! FIND MORE CAMERAS AROUND THE MAP FOR 4
+          MORE HOURS
+      SCommandSettings:
+        Type: 0

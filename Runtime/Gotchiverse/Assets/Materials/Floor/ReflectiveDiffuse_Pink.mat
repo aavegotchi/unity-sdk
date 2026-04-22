@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5170584604699141741
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 7
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ReflectiveDiffuse_Pink
+  m_Shader: {fileID: 4800000, guid: 895538455939d514c9a3dd987377c8f9, type: 3}
+  m_Parent: {fileID: 2100000, guid: 87669f65fb3b9834ea3714e979f537bd, type: 2}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - RECEIVE_SHADOWS
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: _MainTex
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 500, y: 500}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BlurAmount: 2.01
+    - _Distort: 0.01
+    - _Glossiness: 100
+    - _ReceiveShadows: 1
+    m_Colors:
+    - _Color: {r: 0.3513122, g: 0.29436633, b: 0.4245283, a: 0.5529412}
+    - _SpecColor: {r: 0.8113208, g: 0.73860806, b: 0.73860806, a: 1}
+  m_BuildTextureStacks: []

@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9967e943c9a146c1a30784261e017a17, type: 3}
+  m_Name: GameConfigOverride
+  m_EditorClassIdentifier: 
+  _gameConfigurations:
+    IsLive: 1
+    RequiredVersion: 0.4.72
+    FfExtendCreateGameView: 1
+    FFEnableRankFilter: 1
+    GameTheme: 0
+    LobbyCountdownTimer: 20
+    FfEnableAccolades: 1
+    FfAuthWeb3Login: 1
+    Web3Config:
+      Game: 2
+      ClientId: 0a2750f5f0b2d2fbd988c6d90c85d60b
+      SmartWalletFactory: 0x5A45F4Cb70140653B77D9d9e4ff93E19c4c711e4
+      ChainId: 80002
+      HotWallet: 0xEB93c04e5fb3D2C56742ef07CA527a78EadB1b1d
+      AuthType: 1
+      DeductGameCost: 1
+      PersistentConnection: 1
+      PersistentConnectionTimeout: 15
+      FakeWallet: 0
+      EnableWithdraw: 1
+    ApplicationSettings:
+      CustomScene: 
+      GameplayType: 0
+    WeaponConfig:
+      Melee_Basic: 0
+      Melee_Long_Range: 0
+      Melee_High_Rate: 0
+      Melee_Pierce: 0
+      Ranged_Basic: 0
+      Ranged_Fall_off: 0
+      Ranged_Magical: 0
+      Ranged_Sniper: 0
+      Basic_Grenade: 0
+      Impact_Grenade: 0
+      FallOff_Rate: 0
+    WearablesConfig:
+      Wearables: []
+    ProtolickConfig:
+      SentryDamagePerHit: 20
+      DroneBlockReduction: 0.1
+    PlayerConfig:
+      PlayerMaxHP: 1000
+      PlayerMaxAP: 100
+      PlayerExtraLives: 0
+      PlayerSprintMultiplier: 2.5
+      PlayerAPBoostCoef: 0.2
+      PlayerAPCostFly: 25
+      PlayerAPCostRush: 30
+      PlayerAPCostShot: 4
+      PlayerAPCostSlap: 10
+      PlayerAPCostSnipe: 10
+      PlayerAPCostSprint: 25
+      PlayerAPRegenBoostCoef: 0.02
+      PlayerHPRegenPerSec: 0
+      PlayerAPRegenPerSec: 5
+      PlayerBaseArmor: 0
+      PlayerBaseActionSpeed: 1
+      PlayerBaseMeleePower: 350
+      PlayerBaseRangedPower: 100
+      PlayerHealthBoostCoef: 3
+      PlayerArmorBoostCoef: 0.2
+      PlayerActionSpeedBoostCoef: 0.01
+      PlayerHealthRegenBoostCoef: 0.06
+      PlayerMeleePowerBoostCoef: 0.6
+      PlayerRangedPowerBoostCoef: 2.25
+      PlayerArmorDamageReduction: 0.005
+    ApiEndpoint: https://6vnsxcytw5.execute-api.eu-west-2.amazonaws.com
+    ClientApiKey: 7c9e6679-2e6a-4c3c-9f94-e3688176a634
+    ServerApiKey: eaf2bff0-f33e-4c61-8a6f-b5bdf9a753af
+    EventTimeFrame: startTime=2023-09-07 00:00:01&endTime=2023-11-30 00:00:00
+    CDNEndpoint: https://d1rsr7idd3j74r.cloudfront.net/shared-assets
+    ProjectID: 
+    RCKey: 
+    Admins: []
+    LavaFloorLevels: []
