@@ -51,9 +51,8 @@ MonoBehaviour:
     probeSamplingDebugTexture: {fileID: 0}
     probeVolumeBlendStatesCS: {fileID: 0}
   m_RendererFeatures:
-  - {fileID: 2058949633452401616}
   - {fileID: -71994911937923278}
-  m_RendererFeatureMap: d0e35968c8db921c32f74d50023900ff
+  m_RendererFeatureMap: 32f74d50023900ff
   m_UseNativeRenderPass: 1
   xrSystemData: {fileID: 0}
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
@@ -82,67 +81,3 @@ MonoBehaviour:
   m_DepthTextureFormat: 0
   m_AccurateGbufferNormals: 0
   m_IntermediateTextureMode: 1
---- !u!114 &2058949633452401616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cbabd8e2cb2e4f8a930752453adf79a, type: 3}
-  m_Name: Beautify
-  m_EditorClassIdentifier: 
-  m_Active: 1
-  shader: {fileID: 4800000, guid: 55d70ca4ea7504a38b66170bbe587b2f, type: 3}
-  renderPassEvent: 500
-  ignorePostProcessingOption: 0
-  clearXRColorBuffer: 0
-  cameraLayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  stripBeautifyTonemappingACES: 0
-  stripBeautifyTonemappingACESFitted: 0
-  stripBeautifyTonemappingAGX: 0
-  stripBeautifySharpen: 0
-  stripBeautifyDithering: 0
-  stripBeautifyEdgeAA: 0
-  stripBeautifyLUT: 0
-  stripBeautifyLUT3D: 1
-  stripBeautifyColorTweaks: 0
-  stripBeautifyBloom: 0
-  stripBeautifyLensDirt: 0
-  stripBeautifyChromaticAberration: 0
-  stripBeautifyDoF: 0
-  stripBeautifyDoFTransparentSupport: 1
-  stripBeautifyEyeAdaptation: 1
-  stripBeautifyPurkinje: 1
-  stripBeautifyVignetting: 0
-  stripBeautifyOutline: 1
-  stripBeautifyNightVision: 1
-  stripBeautifyThermalVision: 1
-  stripBeautifyFrame: 1
-  stripUnityFilmGrain: 0
-  stripUnityDithering: 0
-  stripUnityTonemapping: 0
-  stripUnityBloom: 0
-  stripUnityChromaticAberration: 0
-  stripUnityDistortion: 0
-  stripUnityDebugVariants: 0
---- !u!114 &7781712395310648426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a8a626e4a363604d8b1a959cc4ab28f, type: 3}
-  m_Name: FullScreenFogRendererFeature
-  m_EditorClassIdentifier: 
-  m_Active: 1
-  _injectionPoint: 550
-  _renderCamera: 3
-  _shader: {fileID: -6465566751694194690, guid: a1b07ed697d67f145899e797afa7e6d3, type: 3}
