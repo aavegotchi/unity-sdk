@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class RenderTextureHolder : MonoBehaviour
 {
-    [SerializeField] public RenderTexture RenderTexture { get; private set; }
+    [field: SerializeField] public RenderTexture RenderTexture { get; private set; }
     [SerializeField] public Camera RenderCamera;
 
     //--------------------------------------------------------------------------------------------------
